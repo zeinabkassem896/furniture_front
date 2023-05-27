@@ -15,6 +15,10 @@
    width: 300px
 
 }
+.category_flex{
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
 
 .category_button::before {
    content: "";
@@ -28,17 +32,30 @@
    z-index: -1;
    transition: all 250ms
 }
-
 .category_button:hover {
    color: #728780;
    border-color: #728780;
 }
-
 .category_button:hover::before {
    width: 100%;
 }
+.category_active{
+   background-color: #F3EFE6;
+}
 .category_card{
-   width: 25%;
-   height: 100px;
-   border: 1px solid red
+   width: 23%;
+   height: 500px;
+}
+.category_card img{
+   width: 100%;
+   height: 85%;
+   object-fit: cover;
+   cursor: pointer;
+}
+.category_card img:hover{
+   transform: scale(1.05);
+}
+.category_card div{
+  display: flex;
+  justify-content: space-between;
 }
