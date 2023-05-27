@@ -1,0 +1,44 @@
+.category_button {
+   padding: 13px 28px;
+   border: unset;
+   border-radius: 25px;
+   color: #728780;
+   z-index: 1;
+   position: relative;
+   font-size: 22px;
+   font-weight: 500;
+   transition: all 250ms;
+   overflow: hidden;
+   cursor: pointer;
+   border: 1px solid #728780;
+   background-color: transparent;
+   width: 300px
+
+}
+
+.category_button::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 0;
+   border-radius: 25px;
+   background-color: #F3EFE6;
+   z-index: -1;
+   transition: all 250ms
+}
+
+.category_button:hover {
+   color: #728780;
+   border-color: #728780;
+}
+
+.category_button:hover::before {
+   width: 100%;
+}
+.category_card{
+   width: 25%;
+   height: 100px;
+   border: 1px solid red
+}

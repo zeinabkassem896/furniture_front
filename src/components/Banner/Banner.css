@@ -1,0 +1,21 @@
+.banner{
+    background-image: url("../../Images/jackets.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.banner h1{
+    color: #728780;
+    font-size: 70px;
+    padding-left: 10vw;
+    font-weight: 800;
+    width: 50vw;
+    background-image: url('../../Images/brush.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90vw;
+}
