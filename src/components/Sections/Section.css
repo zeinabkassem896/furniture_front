@@ -1,0 +1,18 @@
+.section_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px;
+    gap: 2rem;
+}
+.section_grid_item1{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.section_grid_item1 img{
+    width: 100%;
+    height: 100%;
+}
+.section_grid_item2 img{
+    width: 100%;
+    height: 100%;
+}

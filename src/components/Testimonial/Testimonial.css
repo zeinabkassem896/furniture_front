@@ -1,0 +1,11 @@
+
+.testimonial_div img{
+    width: 98%;
+    height: 600px
+}
+.testimonial_icon:hover{
+    transform: scale(1.2);
+}
+.testimonial_div img:hover{
+    transform: scale(1.01);
+}

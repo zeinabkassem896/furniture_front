@@ -1,0 +1,99 @@
+.header{
+    font-size: 22px;
+    position: absolute;
+    width: 100%;
+    color: var(--secondary);
+}
+.header_flex{
+    display: flex;
+}
+.header_div{
+    margin: auto 10vw;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header_rest{
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50%
+}
+.header_button {
+    padding: 13px 28px;
+    border: unset;
+    border-radius: 25px;
+    color: var(--secondary);
+    z-index: 1;
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--secondary);
+    background-color: transparent;
+
+}
+
+.header_button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: all 250ms
+}
+
+.header_button:hover {
+    color: var(--primary);;
+    border-color: var(--primary);
+}
+
+.header_button:hover::before {
+    width: 100%;
+}
+.header_icons{
+    gap: 0.5vw;
+}
+
+.header_menu {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.header_menu::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--primary);
+    height: 3px;
+    transition: 0.3s ease-out;
+}
+
+.header_menu:hover::after, .header_menu:hover::before {
+    width: 100%;
+}
+.header_counter{
+    width: 23px;
+    height: 23px;
+    background-color: var(--primary);
+    position: absolute;
+    left: 1vw;
+    bottom: 2.5vh;
+    border-radius: 7px;
+    color: var(--secondary);
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+
+
