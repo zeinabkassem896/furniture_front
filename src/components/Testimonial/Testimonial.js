@@ -10,7 +10,6 @@ import { Carousel } from '@trendyol-js/react-carousel';
 
 
 function Testimonial(){
-
     return(
         <>
         <div className="section_flex section_title">

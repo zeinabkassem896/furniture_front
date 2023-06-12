@@ -14,6 +14,7 @@ function Footer(){
                 <div>Logo</div>
                 <div className='footer_div_flex'>
                   <div className="header_menu footer_a">HOME</div>
+                  
                   <div className="header_menu footer_a">CATEGORY</div>
                   <div className="header_menu footer_a">ABOUT</div>
                 </div>
