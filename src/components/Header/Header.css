@@ -96,4 +96,11 @@
     justify-content: center;
 }
 
+/* phone version */
+@media (max-width: 480px) {
+    .header {
+      display: none
+    }
+}
+
 

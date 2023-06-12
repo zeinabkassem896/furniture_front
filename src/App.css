@@ -30,5 +30,17 @@ body{
   background-size: 50vw;
 }
 
+/* phone version */
+@media (max-width: 480px) {
+  .section_flex{
+    flex-wrap: wrap;
+    margin: 100px auto
+  }
+  .section_title{
+    background-size: 150vw;
+    font-size: 50px;
+  }
+}
+
 
 

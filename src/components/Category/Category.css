@@ -63,3 +63,13 @@
    margin: -60px auto 150px auto;
    text-align: center;
 }
+
+/* phone version */
+@media (max-width: 480px) {
+   .category_card{
+     width: 48%;
+   }
+   .category_button_div{
+      margin: -60px auto 100px auto;
+   }
+ }

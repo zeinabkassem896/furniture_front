@@ -11,14 +11,13 @@ function Footer(){
     return(
         <>
             <div className='footer_div'>
-                <div>Logo</div>
-                <div className='footer_div_flex'>
+                <div className='footer_logo'>Logo</div>
+                <div className='footer_div_flex footer_div_flex_1'>
                   <div className="header_menu footer_a">HOME</div>
-                  
                   <div className="header_menu footer_a">CATEGORY</div>
                   <div className="header_menu footer_a">ABOUT</div>
                 </div>
-                <div className='footer_div_flex'>
+                <div className='footer_div_flex footer_div_flex_2'>
                     <div className='header_menu footer_a'>All Categories</div>
                     <div className='header_menu footer_a'>Women's Category</div>
                     <div className='header_menu footer_a'>Men's Category</div>

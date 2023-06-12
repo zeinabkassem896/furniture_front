@@ -42,3 +42,17 @@
     font-size: 23px;
     color: var(--primary);
 }
+
+/* phone version */
+@media (max-width: 480px) {
+    .service_flex_div{
+        gap: 5vh
+    }
+    .service_card{
+        padding: 3vh 10vw;
+        height: 500px;
+    }
+    .section_flex .service_card:hover {
+        transform: scale(1.1);
+    }
+  }

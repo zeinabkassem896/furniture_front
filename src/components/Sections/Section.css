@@ -16,3 +16,15 @@
     width: 100%;
     height: 100%;
 }
+
+/* phone version */
+@media (max-width: 480px) {
+    .section_grid{
+      grid-template-columns: 1fr;
+      grid-template-rows: 350px 350px 350px;
+
+    }
+    .section_grid_item1{
+        grid-row: 1/2;
+    }
+  }

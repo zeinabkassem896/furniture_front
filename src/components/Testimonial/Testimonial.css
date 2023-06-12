@@ -9,3 +9,28 @@
 .testimonial_div img:hover{
     transform: scale(1.01);
 }
+
+
+/* phone version */
+@media (max-width: 480px) {
+    .testimonial_carousel{
+        width: 100% !important
+    }
+    .testimonial_div img{
+        width: 400px;
+        height: 600px
+    }
+    .testimonial_icon{
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        background-color: var(--secondary);
+        opacity: 0.5;
+    }
+    .testimonial_icon_left{
+        left: -5%;
+    }
+    .testimonial_icon_right{
+        left: 90%;
+    }
+}

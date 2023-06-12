@@ -19,3 +19,12 @@
     background-position: center;
     background-size: 90vw;
 }
+
+/* phone version */
+@media (max-width: 480px) {
+    .banner h1{
+        font-size: 50px;
+        background-image: none;
+    }
+}
+
