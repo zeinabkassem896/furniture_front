@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { BiUser, BiCart } from 'react-icons/bi';
+import { BiUser, BiCart, BiMenu } from 'react-icons/bi';
 import { Link } from "react-router-dom";
 
 
@@ -17,13 +17,23 @@ function Header(){
                         <Link to="/contact"><button className="header_button">CONTACT ME</button></Link>
                     </div>
                     <div className="header_flex header_icons">
-                    <div className="header_menu">
-                        <BiCart size={35}/>
-                        <div className="header_counter header_flex">20</div>
-                    </div>
-                    <div className="header_menu">
-                        <BiUser size={30}/>
-                    </div>
+                        <div className="header_menu">
+                            <BiCart size={35}/>
+                            <div className="header_counter header_flex">20</div>
+                        </div>
+                        <div className="header_menu">
+                            <BiUser size={30}/>
+                        </div>
+                        <div>
+
+                            <input type="checkbox" id="checkbox" />
+                            <label for="checkbox" class="toggle">
+                                <div class="bars" id="bar1"></div>
+                                <div class="bars" id="bar2"></div>
+                                <div class="bars" id="bar3"></div>
+                            </label>
+                        </div>
+
                     </div>
                 </div>
             </div>

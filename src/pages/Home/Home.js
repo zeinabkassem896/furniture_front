@@ -7,6 +7,8 @@ import Title from "../../components/Title/Title";
 import RoundButton from '../../components/RoundButton/RoundButton';
 import Card from '../../components/Card/Card';
 
+import { Link } from "react-router-dom";
+
 import Img1 from "../../Images/reza-delkhosh-iRAOJYtPHZE-unsplash.jpg"
 import Img2 from "../../Images/judeus-samson-0UECcInuCR4-unsplash.jpg";
 import Img3 from "../../Images/juri-gianfrancesco-UCEtRnp8qR0-unsplash.jpg";
@@ -53,7 +55,7 @@ function Home() {
                     <Card title='title' image={Img3} rating={4} />
                 </div>
                 <div className="section_flex">
-                    <RoundButton title='load more' active={false}/>
+                    <Link to='/product' ><RoundButton title='load more' active={false}/></Link>
                 </div>
                 <Title title="testimonials" />
                 <Testimonial/>

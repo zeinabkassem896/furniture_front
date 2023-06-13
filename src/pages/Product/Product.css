@@ -16,6 +16,7 @@
 }
 .product_search div{
     transition: 1s;
+    transition-duration: .3s;
     width: 16vw;
     text-align: end;
     border-radius: 25px;
@@ -34,10 +35,30 @@
     outline: none;
 }
 .product_filter{
-    width: 30rem;
+    width: 300px;
 }
 .product_card{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1.8vw;
+    width: 100%
 }
+
+/* phone version */
+@media (max-width: 480px) {
+    .product_flex{
+        flex-direction: column;
+    }
+    .product_search{
+        align-items: center;
+        justify-content: end;
+        width: auto;
+        margin-right: 11vw;
+    }
+    .product_search_icon{
+        justify-content: center;
+    }
+    .product_search div{
+        width: auto
+    }
+ }
