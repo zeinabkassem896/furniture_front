@@ -17,7 +17,7 @@ function Footer(){
                 <div className='footer_logo'>Logo</div>
                 <div className='footer_div_flex footer_div_flex_1'>
                   <Link to="/" className="header_menu footer_a">HOME</Link>
-                  <Link to="/product" className="header_menu footer_a">CATEGORY</Link>
+                  <Link to="/product" className="header_menu footer_a">PRODUCTS</Link>
                   <Link to="/about" className="header_menu footer_a">ABOUT</Link>
                 </div>
                 <div className='footer_div_flex footer_div_flex_2'>

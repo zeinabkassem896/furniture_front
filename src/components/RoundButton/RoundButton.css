@@ -1,0 +1,40 @@
+.category_button {
+    padding: 13px 28px;
+    border: unset;
+    border-radius: 25px;
+    color: var(--primary);
+    z-index: 1;
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    width: 300px;
+    text-transform: capitalize;
+ }
+
+ .category_button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    background-color: var(--secondary);
+    z-index: -1;
+    transition: all 250ms
+ }
+ .category_button:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+ }
+ .category_button:hover::before {
+    width: 100%;
+ }
+ .category_active{
+    background-color: var(--secondary);
+ }

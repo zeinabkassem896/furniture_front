@@ -1,4 +1,3 @@
-.home_page{
-    margin-left: 7vw;
-    margin-right: 7vw;
+.category_flex{
+    flex-wrap: wrap;
 }

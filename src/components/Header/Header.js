@@ -4,7 +4,6 @@ import { BiUser, BiCart } from 'react-icons/bi';
 import { Link } from "react-router-dom";
 
 
-
 function Header(){
 
     return(
@@ -13,7 +12,7 @@ function Header(){
                     <Link className="header_menu" to="/">Logo</Link>
                     <div className="header_flex header_rest"> 
                         <Link className="header_menu" to="/">Home</Link>
-                        <Link className="header_menu" to="/product">CATEGORY</Link>
+                        <Link className="header_menu" to="/product">Products</Link>
                         <Link className="header_menu" to="/about">ABOUT</Link>
                         <Link to="/contact"><button className="header_button">CONTACT ME</button></Link>
                     </div>

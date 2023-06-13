@@ -7,9 +7,6 @@ import "./Services.css"
 function Services(){
     return(
         <>
-            <div className="section_flex section_title">
-                Services
-            </div>
             <div className="section_flex service_flex_div">
                 <div className="service_card">
                     <div className="service_icon">

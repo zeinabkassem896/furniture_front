@@ -11,6 +11,10 @@ body{
 .App {
   color: var(--green);
 }
+.home_page{
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
 .section_flex{
   display: flex;
   align-items: center;
@@ -28,6 +32,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50vw;
+  text-transform: capitalize;
 }
 
 /* phone version */
@@ -37,7 +42,7 @@ body{
     margin: 100px auto
   }
   .section_title{
-    background-size: 150vw;
+    background-size: 145vw;
     font-size: 50px;
   }
 }

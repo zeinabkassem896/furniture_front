@@ -8,9 +8,6 @@ import Img3 from "../../Images/young-handsome-man-choosing-cloth-shop.jpg";
 function Section() {
   return (
     <>
-      <div className="section_flex section_title">
-            Media
-      </div>
       <div className="section_grid">
         <div className="section_grid_item1">
           <img alt="media 1" src={Img1}/>
