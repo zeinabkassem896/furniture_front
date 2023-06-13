@@ -23,77 +23,77 @@ function Category(){
         </div>
         <div className="section_flex category_flex">
             <div className="category_card">
-                <img src={Img1}/>
+                <img alt="category 1" src={Img1}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={3}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img2}/>
+                <img alt="category 2" src={Img2}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={4}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img3}/>
+                <img alt="category 3" src={Img3}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={2}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img4}/>
+                <img alt="category 4" src={Img4}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={4}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img5}/>
+                <img alt="category 5" src={Img5}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={3}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img6}/>
+                <img alt="category 6" src={Img6}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={2}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img7}/>
+                <img alt="category 7" src={Img7}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={5}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img8}/>
+                <img alt="category 8" src={Img8}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={1}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img6}/>
+                <img alt="category 9" src={Img6}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={1}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img2}/>
+                <img alt="category 10" src={Img2}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={1}/></p>
                 </div>
             </div>
             <div className="category_card">
-                <img src={Img5}/>
+                <img alt="category 11" src={Img5}/>
                 <div>
                     <p>title</p>
                     <p><Rating fill={1}/></p>

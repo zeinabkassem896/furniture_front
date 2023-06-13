@@ -1,31 +1,21 @@
-.banner{
-    background-image: url("../../Images/jackets.jpg");
-    height: 100vh;
+.notfound{
+    background-image: url("../../Images/taylor-brandon-d-HOgxTgtZY-unsplash.jpg");
+    height: calc(100vh - 100px);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    margin-top: -100px
 }
-.banner h1{
+.notfound h1{
     color: var(--primary);
     font-size: 70px;
-    padding-left: 10vw;
     font-weight: 800;
-    width: 50vw;
+    width: 40vw;
     background-image: url('../../Images/brush.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90vw;
+    background-size: 70vw;
+    padding: 25px 0px 25px 10vw
 }
-
-/* phone version */
-@media (max-width: 480px) {
-    .banner h1{
-        font-size: 50px;
-        background-image: none;
-    }
-}
-
