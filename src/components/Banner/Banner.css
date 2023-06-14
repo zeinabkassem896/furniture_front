@@ -26,6 +26,7 @@
     .banner h1{
         font-size: 50px;
         background-image: none;
+        padding-top: 15vh;
     }
 }
 

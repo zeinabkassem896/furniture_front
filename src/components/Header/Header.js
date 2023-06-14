@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { ClickAwayListener } from '@mui/base';
 import "./Header.css";
-import { BiUser, BiCart, BiMenu } from 'react-icons/bi';
+import { BiUser, BiCart } from 'react-icons/bi';
 import { Link } from "react-router-dom";
 
 
@@ -52,10 +52,10 @@ function Header(){
                     <div> logo</div>
                     <div>
                         <input type="checkbox" id="checkbox" />
-                        <label for="checkbox" class="toggle" onClick={toggleMobileMenu}>
-                            <div class="bars" id="bar1"></div>
-                            <div class="bars" id="bar2"></div>
-                            <div class="bars" id="bar3"></div>
+                        <label htmlFor="checkbox" className="toggle" onClick={toggleMobileMenu}>
+                            <div className="bars" id="bar1"></div>
+                            <div className="bars" id="bar2"></div>
+                            <div className="bars" id="bar3"></div>
                         </label>
                         
                         <div className={openMobileMenu === 0 ? "mobile_menu_page_hidden" : "mobile_menu_page" }>

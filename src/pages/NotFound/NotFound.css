@@ -19,3 +19,11 @@
     background-size: 70vw;
     padding: 25px 0px 25px 10vw
 }
+
+/* phone version */
+@media (max-width: 480px) {
+    .notfound h1{
+        color: var(--secondary);
+        background-image: none;
+    }
+}

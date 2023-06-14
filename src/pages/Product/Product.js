@@ -42,8 +42,7 @@ function Product(){
     },[searchContent])
 
     const changeFilteredItem = ()=>{
-        console.log(searchContent);
-        if(searchContent != ''){
+        if(searchContent !== ''){
             let filterSearch = items.filter((each) => each.title.includes(searchContent));
             setFilteredItems(filterSearch)
         }
