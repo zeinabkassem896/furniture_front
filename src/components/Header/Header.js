@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Context } from '../../Context';
 import { Link } from "react-router-dom";
+import { AppContext } from '../../Context';
+
 
 import { ClickAwayListener } from '@mui/base';
 import { BiUser, BiCart } from 'react-icons/bi';
@@ -9,9 +10,8 @@ import "./Header.css";
 
 
 function Header(){
-
-    const value = useContext(Context);
-    const[ openMobileMenu , setOpenMobileMenu] = useState(0)
+    const { path } = useContext(AppContext);
+    const[ openMobileMenu , setOpenMobileMenu] = useState(0);
 
     const toggleMobileMenu = ()=>{
         if(openMobileMenu === 1){
@@ -29,15 +29,11 @@ function Header(){
         document.getElementById("checkbox").click()
         setOpenMobileMenu(0);
     }
-
-    useEffect(()=>{
-        console.log("Must be fixed ", value )
-    },[])
-
    
 
     return(
-            <div className={window.location.pathname === '/' ? 'header header_home' : 'header'}>
+            <div className={path === '/' ? 'header header_home' : 'header'}>
+
                 <div className="header_div header_flex">
                     <Link className="header_menu" to="/">Logo</Link>
                     <div className="header_flex header_rest"> 
@@ -59,7 +55,8 @@ function Header(){
                 <ClickAwayListener onClickAway={handleClickAway}>
 
                 <div className="mobile_menu">
-                    <div> logo</div>
+                    <Link className="mobile_menu_home_list" to="/"> Logo </Link>
+
                     <div>
                         <input type="checkbox" id="checkbox" />
                         <label htmlFor="checkbox" className="toggle" onClick={toggleMobileMenu}>

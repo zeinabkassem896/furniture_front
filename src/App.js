@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import { Context } from "./Context";
+import { AppContext } from "./Context";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -15,9 +15,14 @@ import "./App.css";
 
 function App() {
 
+  const [ path, setPath ] = useState('/');
+	
+	const dispatchUserEvent = ( payload) => {
+    setPath(payload)
+	};
+
   return (
-    <Context.Provider value={window.location.pathname}>
-    <div className="App">
+    <AppContext.Provider value={{ path, dispatchUserEvent }}>    <div className="App">
       <Header/>
         <Routes>
           <Route>
@@ -30,7 +35,7 @@ function App() {
         </Routes>
       <Footer/>
     </div>
-    </Context.Provider>
+    </AppContext.Provider>
   )
 }
 

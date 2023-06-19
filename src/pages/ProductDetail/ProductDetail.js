@@ -1,12 +1,20 @@
-import React from "react";
-import './ProductDetail.css';
+import React, { useEffect, useContext } from "react";
+import { AppContext } from "../../Context";
 import Title from "../../components/Title/Title";
 import Rating from "../../components/Rating/Rating";
 import RoundButton from "../../components/RoundButton/RoundButton";
 
 import Img1 from "../../Images/clothes-store-with-rack-clothes.jpg";
 
+import './ProductDetail.css';
+
 function ProductDetail(){
+    const { dispatchUserEvent } = useContext(AppContext);
+
+    useEffect(()=>{
+        dispatchUserEvent('/product-detail');
+    },[])
+
     return(
         <>
         <Title title={'Product Detail'}/>

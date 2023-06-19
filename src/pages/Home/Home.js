@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import Banner from "../../components/Banner/Banner";
 import Section from "../../components/Sections/Section";
 import Services from "../../components/Services/Services";
@@ -6,6 +6,8 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Title from "../../components/Title/Title";
 import RoundButton from '../../components/RoundButton/RoundButton';
 import Card from '../../components/Card/Card';
+import { AppContext } from '../../Context';
+
 
 import { Link } from "react-router-dom";
 
@@ -19,9 +21,16 @@ import Img7 from "../../Images/ilya-mondryk-gR9Iyu7eYUI-unsplash.jpg";
 import Img8 from "../../Images/the-ian-ZCoqcrWp9GY-unsplash.jpg";
 
 
-import "../Home/Home.css";
+import "./Home.css";
 
 function Home() {
+
+    const { dispatchUserEvent } = useContext(AppContext);
+
+    useEffect(()=>{
+        dispatchUserEvent('/');
+    },[])
+
     return (
         <>
             <Banner/>

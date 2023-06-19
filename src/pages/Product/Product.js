@@ -1,15 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import './Product.css';
+import React, { useState, useEffect, useContext } from 'react';
+import { AppContext } from '../../Context';
 import Card from '../../components/Card/Card';
 import Title from '../../components/Title/Title';
 import RoundButton from '../../components/RoundButton/RoundButton';
+
 import { BiSearch } from 'react-icons/bi';
 import { BsX } from 'react-icons/bs';
 
-
 import Img1 from '../../Images/clothes-store-with-rack-clothes.jpg'
 
+import './Product.css';
+
+
 function Product(){
+    const { dispatchUserEvent } = useContext(AppContext);
+
     const [showSearch, setShowSearch] = useState(true);
     const [items, setItems] = useState([
         {title:'name', rating: 5},
@@ -33,7 +38,9 @@ function Product(){
 
     useEffect(()=>{
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        setFilteredItems(items)
+        setFilteredItems(items);
+        dispatchUserEvent('/product');
+
     },[])
 
 
