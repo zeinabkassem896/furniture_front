@@ -38,3 +38,8 @@
  .category_active{
     background-color: var(--secondary);
  }
+ .greenButton{
+   color: var(--secondary);
+   background-color: var(--primary);
+   border-color: var(--secondary);
+ }

@@ -1,10 +1,9 @@
 import React from 'react'
 import './RoundButton.css';
 
-function RoundButton({ title, active=false}){
+function RoundButton({ title, active=false, greenButton=''}){
     return(
-        <button className={active ? 'category_button category_active' : 'category_button'}>{title}</button>
-
+        <button className={active ? `${greenButton} category_button category_active` : `category_button ${greenButton}`}>{title}</button>
     )
 }
 

@@ -1,12 +1,16 @@
-import React, { useState } from "react";
-import { ClickAwayListener } from '@mui/base';
-import "./Header.css";
-import { BiUser, BiCart } from 'react-icons/bi';
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from '../../Context';
 import { Link } from "react-router-dom";
+
+import { ClickAwayListener } from '@mui/base';
+import { BiUser, BiCart } from 'react-icons/bi';
+
+import "./Header.css";
 
 
 function Header(){
 
+    const value = useContext(Context);
     const[ openMobileMenu , setOpenMobileMenu] = useState(0)
 
     const toggleMobileMenu = ()=>{
@@ -25,6 +29,12 @@ function Header(){
         document.getElementById("checkbox").click()
         setOpenMobileMenu(0);
     }
+
+    useEffect(()=>{
+        console.log("Must be fixed ", value )
+    },[])
+
+   
 
     return(
             <div className={window.location.pathname === '/' ? 'header header_home' : 'header'}>

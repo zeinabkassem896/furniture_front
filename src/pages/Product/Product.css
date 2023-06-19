@@ -27,7 +27,7 @@
     padding-right: 15px;
 }
 .product_search input{
-    padding: 10px 10px 10px 15px;
+    padding: 10px 10px 10px 25px;
     border-radius: 25px;
     font-size: 18px;
     color: var(--primary);

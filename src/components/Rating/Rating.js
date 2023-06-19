@@ -7,7 +7,7 @@ function Rating({fill}){
     return(
         <>
         {fakeArray.map((each,index)=>(
-            index+1 > fill ?  <BiStar color='var(--primary)' key={index}/> :  <FaStar key={index} color="#728780"/>
+            index+1 > fill ?  <BiStar color='var(--primary)' key={index}/> :  <FaStar key={index} color="var(--primary)"/>
         ))}
         </>
     )

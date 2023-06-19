@@ -31,7 +31,7 @@ body{
   background-image: url('./Images/brush-green.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50vw;
+  background-size: auto;
   text-transform: capitalize;
 }
 
