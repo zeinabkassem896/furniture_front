@@ -9,7 +9,8 @@ import Home from "./pages/Home/Home";
 import About from './pages/About/About';
 import NotFound from "./pages/NotFound/NotFound";
 import Product from "./pages/Product/Product";
-import ProductDetail from './pages/ProductDetail/ProductDetail'
+import ProductDetail from './pages/ProductDetail/ProductDetail';
+import Cart from "./pages/Cart/Cart"
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/product" element={<Product />} />
             <Route path="/product-detail" element={<ProductDetail />} />
             <Route path="/about" element={<About />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

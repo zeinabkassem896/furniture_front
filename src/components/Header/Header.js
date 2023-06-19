@@ -44,7 +44,7 @@ function Header(){
                     </div>
                     <div className="header_flex header_icons">
                         <div className="header_menu">
-                            <BiCart size={35}/>
+                            <Link to="/cart"><BiCart size={35} color="var(--secondary)"/></Link>
                             <div className="header_counter header_flex">20</div>
                         </div>
                         <div className="header_menu">
