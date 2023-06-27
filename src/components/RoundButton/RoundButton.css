@@ -30,13 +30,14 @@
  }
  .category_button:hover {
     color: var(--primary);
-    border-color: var(--primary);
+    border-color: var(--secondary);
  }
  .category_button:hover::before {
     width: 100%;
  }
  .category_active{
     background-color: var(--secondary);
+    border-color: var(--secondary);
  }
  .greenButton{
    color: var(--secondary);

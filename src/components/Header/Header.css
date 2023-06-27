@@ -138,6 +138,13 @@
     color: var(--secondary);
     text-decoration: none;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--primary);
+    opacity: 0.9;
+}
 
 @keyframes move {
     from { right: -20vw; }

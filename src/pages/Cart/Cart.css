@@ -1,9 +1,9 @@
 .cart_table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    width: calc(100% - 14vw);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: calc(100% - 20vw);
     color: var(--primary);
     margin-bottom: 150px;
     font-size: 20px;

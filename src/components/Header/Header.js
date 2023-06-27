@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import useDetectScroll from "@smakss/react-scroll-direction";
+
 import { Link } from "react-router-dom";
 import { AppContext } from '../../Context';
 
@@ -10,6 +12,8 @@ import "./Header.css";
 
 
 function Header(){
+    const scrollDir = useDetectScroll({});
+
     const { path } = useContext(AppContext);
     const[ openMobileMenu , setOpenMobileMenu] = useState(0);
 
@@ -26,13 +30,15 @@ function Header(){
 
     const handleClickAway = ()=>{
         document.body.style.overflow = "scroll";
-        document.getElementById("checkbox").click()
-        setOpenMobileMenu(0);
+        if(openMobileMenu === 1){
+            document.getElementById("checkbox").click()
+            setOpenMobileMenu(0);
+        }
     }
    
 
     return(
-            <div className={path === '/' ? 'header header_home' : 'header'}>
+            <div className={`header ${path === '/' ? 'header_home' : ''} ${scrollDir === 'up' ? 'sticky' : ''}`}>
 
                 <div className="header_div header_flex">
                     <Link className="header_menu" to="/">Logo</Link>
@@ -55,7 +61,7 @@ function Header(){
                 <ClickAwayListener onClickAway={handleClickAway}>
 
                 <div className="mobile_menu">
-                    <Link className="mobile_menu_home_list" to="/"> Logo </Link>
+                    <Link className="mobile_menu_home_list" to="/"> logo </Link>
 
                     <div>
                         <input type="checkbox" id="checkbox" />
